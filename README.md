@@ -3,6 +3,14 @@
 This an extension for the [MagicMirror²](https://magicmirror.builders/).
 This Module extends the functionality of [MMM-ProfileSwitcher](https://github.com/tosti007/MMM-ProfileSwitcher). It connects to Google Pub/Sub and polls the cloud for new messages every second, and acknowledges new messages.  
 
+# Cloud Configuration 
+You will need to create a service key on your Google Project that will be stored as a client_secret.json
+This can be saved as a PATH variable and NOT directly called. Modify your **~/.bashrc** to include: 
+```bash 
+# <<< Magic Mirror Pub/Sub <<<
+export GOOGLE_APPLICATION_CREDENTIALS="/path/to/service/key.json"
+```
+
 ## Installation
 
 In your terminal, go to your MagicMirror's Module folder:
