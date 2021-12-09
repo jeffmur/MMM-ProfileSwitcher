@@ -1,19 +1,7 @@
-﻿<!-- All the links I use multiple times in this readme file, this way I won't have to copy paste so often -->
-[MMM-Facial-Recognition]: https://github.com/paviro/MMM-Facial-Recognition
-[MMM-ProfileSwitcher]: https://github.com/tosti007/MMM-ProfileSwitcher
-
-# MMM-ProfileSwitcher
+﻿# MMM-ProfileSwitcher
 
 This an extension for the [MagicMirror²](https://magicmirror.builders/).
-This Module adds the ability to have different layouts for different profiles.
-
-Special thanks goes to [Paviro](https://github.com/paviro) for giving input, working together and because this module's classes idea is based on his [MMM-Facial-Recognition] module's classes idea.
-
-## Unmaintained
-
-I am not currently active anymore in the MagicMirror community, as I am busy with study and life, hence this project is unmaintained. That means I mostly won't creating new features or be replying to questions in-depth on this module, as I don´t really know how the framework works anymore. 
-
-However this module does work as described here so feel free to use it! If you're having problems with the module feel free to ask in an issue, but I will most likely have no answer (but maybe someone does). I will respond to pull requests, so if you have an issue feel free to fix it yourself and shoot me a pull request!
+This Module extends the functionality of [MMM-ProfileSwitcher](https://github.com/tosti007/MMM-ProfileSwitcher). It connects to Google Pub/Sub and polls the cloud for new messages every second, and acknowledges new messages.  
 
 ## Installation
 
@@ -24,7 +12,7 @@ cd ~/MagicMirror/modules
 
 Clone this repository:
 ````
-git clone https://github.com/tosti007/MMM-ProfileSwitcher.git
+git clone https://github.com/jeffmur/MMM-ProfileSwitcher.git
 ````
 
 ## Using the module
@@ -36,6 +24,7 @@ modules: [
         module: 'MMM-ProfileSwitcher',
         config: {
             // See 'Configuration options' for more information.
+            // Sample config.js available: https://github.com/jeffmur/Smart-Mirror
         }
     }
 ]

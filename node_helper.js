@@ -22,8 +22,8 @@ module.exports = NodeHelper.create({
   // Fetches the most recent published message
   syncPull: async function () {
     self = this;
-    const projectId = "smartmirror-fba08";
-    const subscriptionName = "faceRecon-sub";
+    const projectId = "YOUR PROJECT ID";
+    const subscriptionName = "TOPICNAME-sub";
     const subClient = new v1.SubscriberClient();
 
     const formattedSubscription = subClient.subscriptionPath(
